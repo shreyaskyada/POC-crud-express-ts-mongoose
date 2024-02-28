@@ -1,0 +1,25 @@
+### Get all todos
+GET http://localhost:3000/todos
+
+### Get perticular todo
+GET http://localhost:3000/todos/65dee53278a4baf34f4742dd
+
+### Create new todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "task": "hello",
+  "completed": false
+}
+
+### Update todo
+PATCH http://localhost:3000/todos/65dee3a19e711b66098b5ef2
+Content-Type: application/json
+
+{
+  "task": "hello updated"
+}
+
+### Delete todo
+DELETE http://localhost:3000/todos/65dee53278a4baf34f4742dd
